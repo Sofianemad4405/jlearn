@@ -122,13 +122,15 @@ public class App {
             System.out.println("Fruit: " + fruit);
         }
         // oop class
-        Calculator calculator = new Calculator();
+        Oop calculator = new Oop();
         int sum1 = calculator.add(5, 10);
         int sum2 = calculator.add(5, 10, 15);
         double sum3 = calculator.add(5.5, 10.5);
         System.out.println("Sum1: " + sum1);
         System.out.println("Sum2: " + sum2);
         System.out.println("Sum3: " + sum3);
+        Car car = new Car();
+        
     }
 
 

@@ -68,25 +68,63 @@ public class App {
         
         //scanner +switch
         char grade =scanner.next().charAt(0);
-        switch (grade) {
+        String gradeDescription = switch (grade) {
             case 'A':
-                System.out.println("Excellent");
-                break;
+                yield "Excellent";
             case 'B':
-                System.out.println("Good");
-                break;
+                yield "Good";
             case 'C':
-                System.out.println("Average"); 
-                break;
+                yield "Average";
             case 'D':
-                System.out.println("Below Average");
-                break;
+                yield "Below Average";
             case 'F':
-                System.out.println("Fail");
-                break;
+                yield "Fail";
             default:
-                System.out.println("Invalid grade");
-                break;
+                yield "Invalid grade";
+        };
+        System.out.println("Grade description: " + gradeDescription);
+
+        //without yeild
+        char grade2 =scanner.next().charAt(0);
+        String gradeDescription2= switch (grade2) {
+            case 'A' -> "Excellent";
+            case 'B' -> "Good";
+            case 'C' -> "Average";
+            case 'D' -> "Below Average";
+            case 'F' -> "Fail";
+            default -> "Invalid grade";
+        };
+        System.out.println("Grade description: " + gradeDescription2);
+    
+        //While, Do While, For, Nested Loops
+        int count = 0;
+        while (count < 5) {
+            System.out.println("Count: " + count);
+            count++;
         }
-     }
+
+        int count2 = 0;
+        do {
+            System.out.println("Count2: " + count2);
+            count2++;
+        } while (count2 < 5);
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println("i: " + i);
+        }
+
+        // arrays
+        String[] fruits = {"Apple", "Banana", "Cherry"};
+        System.out.println(fruits[0]); // Accessing first element
+        System.out.println(fruits[1]); // Accessing second element
+        System.out.println(fruits[2]); // Accessing third element
+        for (String fruit : fruits) {
+            System.out.println("Fruit: " + fruit);
+        }
+        // oop class
+        oop myOop = new oop();
+        myOop.myMethod();
+    }
+
+
 }

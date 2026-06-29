@@ -82,4 +82,33 @@ class Student {
     public int getAge() {
         return age;
     }
+
+    //static variable
+
+    class Dog{
+
+    static int count = 0;
+
+    Dog(){
+
+        count++;
+
+    }
+    Dog d1 = new Dog();
+
+    // Dog d2 = new Dog();
+    
+    // Dog d3 = new Dog();
+    
+    // count = 3
+    class MathUtils{
+
+    static int square(int x){
+
+        return x*x;
+
+    }
+
+}
+}
 }

@@ -60,8 +60,8 @@ public class App {
         String userName=scanner.nextLine();
         System.out.println("Hello, " + userName);
         scanner.close();
-
-        //Ternary Operators, Switch Case 
+        
+        //Ternary Operators, Switch Case
         int number=2;
         String result= (number % 2 == 0) ? "even" : "odd";
         System.out.println("The number is " + result);
@@ -132,6 +132,11 @@ public class App {
         Car car = new Car();
         
     }
+    //hello streak
+
+
+
+    
 
 
 }
